@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Edit Resource{% endblock %}
+
+{% block content %}
+  <h2>Edit Resource</h2>
+  <form action="{{ url_for('edit_resource', resource_id=resource._id) }}" method="post">
+    <label for="name">Name:</label>
+    <input type="text" name="name" value="{{ resource.name }}">
+    <label for="quantity">Quantity:</label>
+    <input type="number" name="quantity" value="{{ resource.quantity }}">
+    <button type="submit">Update Resource</button>
+  </form>
+{% endblock %}

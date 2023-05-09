@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 1rem;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+form {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 0.5rem;
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+button[type="submit"] {
+  padding: 0.5rem;
+  border-radius: 3px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}

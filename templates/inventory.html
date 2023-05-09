@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Inventory{% endblock %}
+
+{% block content %}
+  <h2>Inventory</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Resource Name</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for resource in resources %}
+        <tr>
+          <td>{{ resource.name }}</td>
+          <td>{{ resource.quantity }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

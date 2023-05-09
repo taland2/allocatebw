@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %} - Resource Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <nav>
+      <h1>Resource Management</h1>
+      <a href="{{ url_for('home') }}">Home</a>
+    </nav>
+    {% block content %}{% endblock %}
+  </body>
+</html>

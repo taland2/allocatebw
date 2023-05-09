@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}User Consumption{% endblock %}
+
+{% block content %}
+  <h2>User Consumption</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>User</th>
+        <th>Resource Name</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for user_consumption in user_consumptions %}
+        <tr>
+          <td>{{ user_consumption.user }}</td>
+          <td>{{ user_consumption.resource.name }}</td>
+          <td>{{ user_consumption.quantity }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
